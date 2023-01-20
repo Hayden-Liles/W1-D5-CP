@@ -1,0 +1,149 @@
+:root{
+  --primary: #ffebcd;
+  --subtlewhite: rgb(244, 244, 244);
+}
+@media (max-width: 576px) {
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1400px) {}
+
+/* SECTION element selectors */
+
+header{
+  background-color: var(--primary);
+}
+
+textarea{
+  resize: none;
+}
+
+p{
+  margin: 0;
+}
+
+/* SECTION CLASSES */
+
+.main-icon{
+  font-size: 3em;
+}
+
+.font-noto{
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.form-bg{
+  background-color: var(--subtlewhite);
+}
+.mr-5{
+  margin-right: 5%;
+}
+.ml-10{
+  margin-left: 10%;
+}
+.pl-10{
+  padding-left: 10%;
+}
+
+.btn-color{
+  background-color: rgb(18, 234, 54);
+  border: 1px solid black;
+  box-shadow: 1px 1px 10px black;
+}
+
+/* SECTION IDS */
+
+
+/* SECTION MY FONTS */
+
+.mf-0-8{
+  font-size: .8em;
+  }
+.mf-1{
+font-size: 1em;
+}
+.mf-1-5{
+  font-size: 1.5em;
+}
+.mf-2{
+font-size: 2em;
+}
+.mf-2-5{
+font-size: 2.5em;
+}
+.mf-3{
+font-size: 3em;
+}
+.mf-3-5{
+font-size: 3.5em;
+}
+.mf-4{
+font-size: 4em;
+}
+.mf-4-5{
+font-size: 4.5em;
+}
+.mf-5{
+font-size: 5em;
+}
+.mf-5{
+font-size: 5.5em;
+}
+
+/* SECTION MY WIDTHS */
+
+.mw-100{
+  width: 100%;
+}
+.mw-90{
+  width: 90%;
+}
+.mw-80{
+  width: 80%;
+}
+.mw-70{
+  width: 70%;
+}
+.mw-60{
+  width: 60%;
+}
+.mw-55{
+  width: 55%;
+}
+.mw-50{
+  width: 50%;
+}
+.mw-40{
+  width: 40%;
+}
+.mw-35{
+  width: 35%;
+}
+.mw-30{
+  width: 30%;
+}
+.mw-25{
+  width: 25%;
+}
+.mw-20{
+  width: 20%;
+}
+.mw-10{
+  width: 10%;
+}
+

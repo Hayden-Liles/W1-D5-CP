@@ -1,0 +1,17 @@
+          <form action="" class="mw-80 pt-5">
+            <p class="mf-0-8 text-white">Contact Us!</p>
+            <div class="text-center form-bg">
+              <p class="pl-10 pt-4 mf-1 fw-semibold text-start">Your Information:</p>
+              <input type="text" placeholder="Name" class="mb-2 mw-80">
+              <input type="text" placeholder="Email" class="my-2 mw-80">
+              <div class="d-flex justify-content-center">
+                <input type="text" placeholder="Phone Number" class="my-2 mw-50 mr-5">
+                <input type="text" placeholder="Ext." class="my-2 mw-25">
+              </div class="">
+              <textarea placeholder="Message..." cols="30" rows="7" class="mw-80"></textarea><br>
+              <div class="form-check ml-10 text-start">
+                <label for="">By checking this form you agree to<br> our <a href="">terms of service</a></label>
+                <input class="form-check-input" type="checkbox">
+              </div>
+            </div>
+          </form>
