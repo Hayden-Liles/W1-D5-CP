@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,81 +10,148 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
   <!-- SECTION font-awesome && bootstrap -->
   <script src="https://kit.fontawesome.com/c2ad7cda48.js" crossorigin="anonymous"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- SECTION my style sheet -->
   <link rel="stylesheet" href="style.css">
   <title>CodeSpace</title>
+
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
 </head>
 
 
-<body>
+<body class="debug">
 
-  <header>
+  <header class="sticky-top">
 
-  <div class="container-fluid">
-    <div class="row sticky-top">
-      <div class="col-6 d-flex text-center align-items-center">
-        <i class="main-icon p-2 fa-brands fa-codepen"></i>
-        <p class="font-noto fw-semibold mf-2 m-0">Codespace</p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 d-flex text-center align-items-center">
+          <i class="m-icon-3 p-2 fa-brands fa-codepen"></i>
+          <p class="font-noto fw-semibold mf-2 m-0">Codespace</p>
+        </div>
       </div>
     </div>
-  </div>
 
   </header>
 
   <main>
 
-    <div class="container-fluid bg-secondary">
+    <div class="container-fluid bg-secondary main-bg-img">
       <div class="row">
 
 
         <!-- left-side intro -->
-        <div class="col-3 px-5 pt-5"> 
+        <div class="col-12 col-md-3 pt-5">
           <form id="form1">
-            
-            <div class="row">
-              <div class="p-0 pb-1 col-11 offset-1 text-light">Contact Us!</div>
+
+            <div class="row justify-content-center">
+              <div class="pb-1 col-11 offset-md-1 text-light">Contact Us!</div>
+            </div>
+            <div class="form-bg">
+              <div class="row">
+                <div class="col-12 col-md-11 offset-md-1 py-2">
+                  <p class="text-success fw-bold">Your Information</p>
+                </div>
+                <div class="pb-1 col-11 offset-1">
+                  <input classtype="text" placeholder="Name" class="mw-90">
+                </div>
+                <div class="pb-1 col-11 offset-1">
+                  <input classtype="text" placeholder="Email" class="mw-90">
+                </div>
+                <div class="pb-1 col-7 offset-1">
+                  <input classtype="text" placeholder="Phone Number" class="mw-100">
+                </div>
+                <div class="pb-1 col-4">
+                  <input classtype="text" placeholder="Ext." class="mw-70">
+                </div>
+                <div class="pb-2 col-11 offset-1">
+                  <textarea rows="7" placeholder="Message..." class="mw-90"></textarea>
+                </div>
+                <div class="pb-2 col-11 offset-1 d-flex">
+                  <input type="checkbox">
+                  <p>By checking this box I agree to <a href="">terms of service</a></p>
+                </div>
+                <div class="pb-2 col-11 offset-1 d-flex">
+                  <input type="button" value="Submit" id="form-btn1" onclick="idc()">
+                </div>
+              </div>
             </div>
 
-            <div class="row">
-              <div class="col-11 offset-1 form-bg py-2">
-                <p class="text-success fw-bold">Your Information</p>
-              </div>
-              <div class="pb-1 col-11 offset-1 form-bg">
-                <input classtype="text" placeholder="Name" class="mw-100" id="delete">
-              </div>
-              <div class="pb-1 col-11 offset-1 form-bg">
-                <input classtype="text" placeholder="Email" class="mw-100" id="">
-              </div>
-              <div class="pb-1 col-7 offset-1 form-bg">
-                <input classtype="text" placeholder="Phone Number" class="mw-100" id="">
-              </div>
-              <div class="pb-1 col-4 form-bg">
-                <input classtype="text" placeholder="Ext." class="mw-100">
-              </div>
-              <div class="pb-2 col-11 offset-1 form-bg">
-                <textarea rows="7" placeholder="Message..." class="mw-100"></textarea>
-              </div>
-              <div class="pb-2 col-11 offset-1 form-bg d-flex">
-                <input type="checkbox">
-                <p class="ps-1">By checking this box I agree to <a href="">terms of service</a></p>
-              </div>
-              <div class="pb-2 col-11 offset-1 form-bg d-flex">
-                <input type="button" value="Submit" id="form-btn1" onclick="idc()">
-              </div>
-              
-
-              
-            </div>
           </form>
         </div>
-
-
-        <div class="col-7 offset-1">
+        <div class="col-7 d-none d-md-block offset-1 align-items-center mw-40 mt-5">
           <!-- right side intro -->
           <div class="row">
-            <div class="col-12">c</div>
-            <div class="col-12">d</div>
+            <div class="col-12  head-bg-text mt-5 text-center">
+              <p class="mf-5 fw-semibold">| Coding is FUN!</p>
+              <p class="mf-2 fw-">coding is hard but rewarding $$$</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row d-block d-lg-flex" id="about-me-section">
+        <div class="col d-flex justify-content-around p-5 order-2">
+          <div class="col bg-nice-gray bleed-down">
+            <p class="mf-1-5"><i class="fa-brands fa-html5 text-white m-icon-2 px-2 py-2 align-middle"></i>I'm amazing
+              at HTML Lorem ipsum dolor sit amet.<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-css3-alt text-white m-icon-2 px-2 py-2 align-middle"></i>I'm
+              amazing at CSS but dont like it Lorem, ipsum dolor Lorem, ipsum dolor.<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-js text-white m-icon-2 px-2 py-2 align-middle"></i>I'm amazing at
+              JavaScript and I do like it have expxr2ence<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-vuejs text-white m-icon-2 px-2 py-2 align-middle"></i>I'm amazing
+              at VUE im just kidding ive never used it<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-node-js text-white m-icon-2 px-2 py-2 align-middle"></i>I've
+              never used nodeJS but i have used js so i must be amazing<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-bootstrap text-white m-icon-2 px-2 py-2 align-middle"></i>I'm
+              amazing at Bootstrap but man does it have a lot to it<br></p>
+
+          </div>
+        </div>
+        <div class="col order-1">
+          <div class="col justify-content-around justify-content-lg-start align-items-center d-flex">
+            <div class="d-block px-5 pt-2">
+              <p class="mf-3 text-center">A little about me! <br></p>
+              <p class="mf-2-5 text-center">I'm Amazing!!<br></p>
+              <p class="mf-1">and, I like to code, and like to do things involving coding <br>and other things like that
+                and things close to that, i'd say <br>im pretty cool for knowing how to code sorry if you dont </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 form-bg d-flex">
+            <div class="col-3 py-5">
+              <img src="https://via.placeholder.com/800x1300/1000" alt="a" class="img-fluid ps-4">
+            </div>
+          <div class="col-9 justify-content-center align-items-center d-flex">
+            <div class="d-block ps-5">
+              <p class="mf-2-5"><i class="fa-solid fa-check m-icon-1 pe-3"></i>CODING IS SUPER COOL!<br>DON'T YOU KNOW ITS TRUE<br></p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, dignissimos. Soluta, inventore.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -94,7 +162,10 @@
   <footer></footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+    defer></script>
   <script src="app.js"></script>
 </body>
+
 </html>
