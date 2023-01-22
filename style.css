@@ -136,6 +136,10 @@ p {
   background-color: var(--primary);
 }
 
+#footer-main{
+  background-color: var(--primary);
+}
+
 /* SECTION MY FONTS */
 
 .mf-0-8 {
