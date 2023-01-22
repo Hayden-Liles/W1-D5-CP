@@ -1,17 +1,17 @@
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SECTION Fonts -->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SECTION Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
   <!-- SECTION font-awesome && bootstrap -->
   <script src="https://kit.fontawesome.com/c2ad7cda48.js" crossorigin="anonymous"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <!-- SECTION my style sheet -->
   <link rel="stylesheet" href="style.css">
   <title>CodeSpace</title>
@@ -37,7 +37,7 @@
 </head>
 
 
-<body class="debug">
+<body class="">
 
   <header class="sticky-top">
 
@@ -68,7 +68,7 @@
             <div class="form-bg">
               <div class="row">
                 <div class="col-12 col-md-11 offset-md-1 py-2">
-                  <p class="text-success fw-bold">Your Information</p>
+                  <p class="text-success fw-bold offset-1 offset-md-0">Your Information</p>
                 </div>
                 <div class="pb-1 col-11 offset-1">
                   <input classtype="text" placeholder="Name" class="mw-90">
@@ -87,7 +87,7 @@
                 </div>
                 <div class="pb-2 col-11 offset-1 d-flex">
                   <input type="checkbox">
-                  <p>By checking this box I agree to <a href="">terms of service</a></p>
+                  <p class="px-2">By checking this box I agree to <a href="">terms of service</a></p>
                 </div>
                 <div class="pb-2 col-11 offset-1 d-flex">
                   <input type="button" value="Submit" id="form-btn1" onclick="idc()">
@@ -113,24 +113,43 @@
       <div class="row d-block d-lg-flex" id="about-me-section">
         <div class="col d-flex justify-content-around p-5 order-2">
           <div class="col bg-nice-gray bleed-down">
-            <p class="mf-1-5"><i class="fa-brands fa-html5 text-white m-icon-2 px-2 py-2 align-middle"></i>I'm amazing
-              at HTML Lorem ipsum dolor sit amet.<br></p>
-            <p class="mf-1-5"><i class="fa-brands fa-css3-alt text-white m-icon-2 px-2 py-2 align-middle"></i>I'm
-              amazing at CSS but dont like it Lorem, ipsum dolor Lorem, ipsum dolor.<br></p>
-            <p class="mf-1-5"><i class="fa-brands fa-js text-white m-icon-2 px-2 py-2 align-middle"></i>I'm amazing at
-              JavaScript and I do like it have expxr2ence<br></p>
-            <p class="mf-1-5"><i class="fa-brands fa-vuejs text-white m-icon-2 px-2 py-2 align-middle"></i>I'm amazing
-              at VUE im just kidding ive never used it<br></p>
-            <p class="mf-1-5"><i class="fa-brands fa-node-js text-white m-icon-2 px-2 py-2 align-middle"></i>I've
-              never used nodeJS but i have used js so i must be amazing<br></p>
-            <p class="mf-1-5"><i class="fa-brands fa-bootstrap text-white m-icon-2 px-2 py-2 align-middle"></i>I'm
-              amazing at Bootstrap but man does it have a lot to it<br></p>
+            <div class="row p-2 align-items-center">
+              <ul class="list-group list-group-horizontal list-reset align-items-center">
+                <li class="list-group-item list-reset"><i class="fa-brands fa-html5 m-icon-2 px-2 py-2 align-middle"></i></li>
+                <li>I'm amazing at HTML Lorem ipsum dolor sit amet.</li>
+              </ul>  
+              <ul class="list-group list-group-horizontal list-reset align-items-center">
+                <li class="list-group-item list-reset"><i class="fa-brands fa-css3-alt m-icon-2 px-2 py-2 align-middle"></i></li>
+                <li>I'm
+                  amazing at CSS but dont like it Lorem, ipsum dolor Lorem, ipsum dolor.</li>
+              </ul>  
+              <ul class="list-group list-group-horizontal list-reset align-items-center">
+                <li class="list-group-item list-reset"><i class="fa-brands fa-js m-icon-2 px-2 py-2 align-middle"></i></li>
+                <li>I'm amazing at
+                  JavaScript and I do like it have expxrience</li>
+              </ul>  
+              <ul class="list-group list-group-horizontal list-reset align-items-center">
+                <li class="list-group-item list-reset"><i class="fa-brands fa-vuejs m-icon-2 px-2 py-2 align-middle"></i></li>
+                <li>I'm amazing
+                  at VUE im just kidding ive never used it</li>
+              </ul>  
+              <ul class="list-group list-group-horizontal list-reset align-items-center">
+                <li class="list-group-item list-reset"><i class="fa-brands fa-node-js m-icon-2 px-2 py-2 align-middle"></i></li>
+                <li>I've
+                  never used nodeJS but i have used js so i must be amazing</li>
+              </ul>  
+              <ul class="list-group list-group-horizontal list-reset align-items-center">
+                <li class="list-group-item list-reset"><i class="fa-brands fa-bootstrap m-icon-2 px-2 py-2 align-middle"></i></li>
+                <li>I'm
+                  amazing at Bootstrap but man does it have a lot to it</li>
+              </ul>  
 
+            </div>
           </div>
         </div>
-        <div class="col order-1">
-          <div class="col justify-content-around justify-content-lg-start align-items-center d-flex">
-            <div class="d-block px-5 pt-2">
+        <div class="col order-1 d-flex">
+          <div class="col d-flex align-items-center">
+            <div class="d-block px-5 pt-2 pb-5">
               <p class="mf-3 text-center">A little about me! <br></p>
               <p class="mf-2-5 text-center">I'm Amazing!!<br></p>
               <p class="mf-1">and, I like to code, and like to do things involving coding <br>and other things like that
@@ -143,16 +162,48 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 form-bg d-flex">
-            <div class="col-3 py-5">
-              <img src="https://via.placeholder.com/800x1300/1000" alt="a" class="img-fluid ps-4">
+        <div class="col-md-12 form-bg d-md-flex">
+            <div class="col-12 col-md-3 py-5">
+              <img src="https://via.placeholder.com/500x800/50" alt="a" class="img-fluid ps-md-4">
             </div>
-          <div class="col-9 justify-content-center align-items-center d-flex">
-            <div class="d-block ps-5">
-              <p class="mf-2-5"><i class="fa-solid fa-check m-icon-1 pe-3"></i>CODING IS SUPER COOL!<br>DON'T YOU KNOW ITS TRUE<br></p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, dignissimos. Soluta, inventore.</p>
+          <div class="col-md-9 col-12 justify-content-center align-items-center d-md-flex">
+            <div class="d-block ps-md-5">
+              <p id="explanation-one" class="fw-semibold"><i class="fa-solid fa-check m-icon-1 me-3"></i>CODING IS SUPER COOL!<br>DON'T YOU KNOW ITS TRUE<br></p>
+              <p id="explanation-two">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto, dignissimos. Soluta, inventore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi reiciendis, quas eius hic asperiores laboriosam deserunt possimus doloribus? Nesciunt officiis reprehenderit dolorum dicta, adipisci esse totam natus ab autem minima?</p>
+            </div>
+              <button class="align-self-end me-5 mb-5 bg-success px-4">more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row bg-nice-gray">
+        <div class="col-12 d-md-flex justify-content-around align-items-center py-5">
+
+          <div class="col-12 col-md-3 py-md-0 py-3 order-md-2">
+            <div class="card text-center p-3">
+              <div class="d-flex justify-content-around mf-3-5">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eum esse in dolores iusto tempore tenetur consequatur eaque natus debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit distinctio laudantium. Exercitationem in doloremque repudiandae aliquid. Ab, laborum odit.</p>
+                <p class="text-success"><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dignissimos!</p>
             </div>
           </div>
+
+          <div class="col-12 col-md-3 py-md-0 py-3 order-md-1">
+            <div class="card text-center p-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eum esse in dolores iusto tempore tenetur consequatur eaque natus debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit distinctio laudantium. Exercitationem in doloremque repudiandae aliquid. Ab, laborum odit.</p>
+              <p class="text-success"><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dignissimos!</p>
+            </div>
+          </div>
+          
+          <div class="col-12 col-md-3 py-md-0 py-3 order-md-3">
+            <div class="card text-center p-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit eum esse in dolores iusto tempore tenetur consequatur eaque natus debitis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit distinctio laudantium. Exercitationem in doloremque repudiandae aliquid. Ab, laborum odit.</p>
+              <p class="text-success"><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dignissimos!</p>
+            </div>
+          </div>          
         </div>
       </div>
     </div>

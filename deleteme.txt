@@ -1,17 +1,12 @@
-          <form action="" class="mw-80 pt-5">
-            <p class="mf-0-8 text-white">Contact Us!</p>
-            <div class="text-center form-bg">
-              <p class="pl-10 pt-4 mf-1 fw-semibold text-start">Your Information:</p>
-              <input type="text" placeholder="Name" class="mb-2 mw-80">
-              <input type="text" placeholder="Email" class="my-2 mw-80">
-              <div class="d-flex justify-content-center">
-                <input type="text" placeholder="Phone Number" class="my-2 mw-50 mr-5">
-                <input type="text" placeholder="Ext." class="my-2 mw-25">
-              </div class="">
-              <textarea placeholder="Message..." cols="30" rows="7" class="mw-80"></textarea><br>
-              <div class="form-check ml-10 text-start">
-                <label for="">By checking this form you agree to<br> our <a href="">terms of service</a></label>
-                <input class="form-check-input" type="checkbox">
-              </div>
-            </div>
-          </form>
+<p class="mf-1-5"><i class="fa-brands fa-html5 text-white m-icon-2 px-2 py-2 align-middle"></i>I'm amazing
+              at HTML Lorem ipsum dolor sit amet.<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-css3-alt text-white m-icon-2 px-2 py-2 align-middle"></i>I'm
+              amazing at CSS but dont like it Lorem, ipsum dolor Lorem, ipsum dolor.<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-js text-white m-icon-2 px-2 py-2 align-middle"></i>I'm amazing at
+              JavaScript and I do like it have expxr2ence<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-vuejs text-white m-icon-2 px-2 py-2 align-middle"></i>I'm amazing
+              at VUE im just kidding ive never used it<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-node-js text-white m-icon-2 px-2 py-2 align-middle"></i>I've
+              never used nodeJS but i have used js so i must be amazing<br></p>
+            <p class="mf-1-5"><i class="fa-brands fa-bootstrap text-white m-icon-2 px-2 py-2 align-middle"></i>I'm
+              amazing at Bootstrap but man does it have a lot to it<br></p>

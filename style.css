@@ -1,96 +1,130 @@
-:root{
+:root {
   --primary: #ffebcd;
   --subtlewhite: #f4f4f4;
   --nicegray: #8a8a8a;
 }
+
 @media (max-width: 576px) {
+  #explanation-one{
+    font-size: 1.5em;
+  }
+  #explanation-two{
+    font-size: 1.2em;
+  }
 }
 
 @media (min-width: 576px) {
-
+  #explanation-one{
+    font-size: 2.5em;
+  }
+  #explanation-two{
+    font-size: 1.5em;
+  }
 }
 
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 992px) {
-  .bleed-down{
+  .bleed-down {
     transform: translateY(12.5vh);
   }
-
+  .m-img-fluid{
+    max-width: 100%;
+    height: auto;
+  }
+  #explanation-one{
+    font-size: 5em;
+  }
+  #explanation-two{
+    font-size: 2.5em;
+  }
 }
 
-@media (min-width: 1200px) {
-  
-}
+@media (min-width: 1200px) {}
 
 @media (min-width: 1400px) {}
 
 /* SECTION element selectors */
 
-header{
+header {
   background-color: var(--primary);
 }
 
-textarea{
+textarea {
   resize: none;
 }
 
-p{
+p {
   margin: 0;
 }
 
+
+.list-reset{
+  list-style: none;
+  background-color: unset;
+  border: none;
+  word-break: break-all;
+}
+
+
 /* SECTION CLASSES */
 
-.m-icon-3{
+
+.m-icon-3 {
   font-size: 3em;
 }
 
-.m-icon-2{
+.m-icon-2 {
   font-size: 2em;
 }
 
-.m-icon-1{
+.m-icon-1 {
   font-size: 1em;
 }
 
+.card{
+  box-shadow: 3px 3px 1px 2px rgb(214, 214, 214);
+}
 
 
 
-.font-noto{
+.font-noto {
   font-family: 'Noto Sans', sans-serif;
 }
 
-.form-bg{
+.form-bg {
   background-color: var(--subtlewhite);
 }
-.bg-nice-gray{
+
+.bg-nice-gray {
   background-color: var(--nicegray);
 }
-.mr-5{
+
+.mr-5 {
   margin-right: 5%;
 }
-.ml-10{
+
+.ml-10 {
   margin-left: 10%;
 }
-.pl-10{
+
+.pl-10 {
   padding-left: 10%;
 }
 
-.btn-color{
+.btn-color {
   background-color: rgb(18, 234, 54);
   border: 1px solid black;
   box-shadow: 1px 1px 10px black;
 }
 
-.main-bg-img{
+.main-bg-img {
   background-image: url(https://images.unsplash.com/photo-1537884944318-390069bb8665?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
   background-position: center;
   background-size: cover;
 }
 
-.head-bg-text{
+.head-bg-text {
   color: rgb(221, 255, 0);
   border: 5px solid black;
   background-color: rgba(0, 26, 255, 0.445);
@@ -98,86 +132,106 @@ p{
 
 /* SECTION IDS */
 
-#about-me-section{
+#about-me-section {
   background-color: var(--primary);
 }
 
-
 /* SECTION MY FONTS */
 
-.mf-0-8{
+.mf-0-8 {
   font-size: .8em;
-  }
-.mf-1{
-font-size: 1em;
 }
-.mf-1-5{
+
+.mf-1 {
+  font-size: 1em;
+}
+
+.mf-1-5 {
   font-size: 1.5em;
 }
-.mf-2{
-font-size: 2em;
+
+.mf-2 {
+  font-size: 2em;
 }
-.mf-2-5{
-font-size: 2.5em;
+
+.mf-2-5 {
+  font-size: 2.5em;
 }
-.mf-3{
-font-size: 3em;
+
+.mf-3 {
+  font-size: 3em;
 }
-.mf-3-5{
-font-size: 3.5em;
+
+.mf-3-5 {
+  font-size: 3.5em;
 }
-.mf-4{
-font-size: 4em;
+
+.mf-4 {
+  font-size: 4em;
 }
-.mf-4-5{
-font-size: 4.5em;
+
+.mf-4-5 {
+  font-size: 4.5em;
 }
-.mf-5{
-font-size: 5em;
+
+.mf-5 {
+  font-size: 5em;
 }
-.mf-5{
-font-size: 5.5em;
+
+.mf-5 {
+  font-size: 5.5em;
 }
 
 /* SECTION MY WIDTHS */
 
-.mw-100{
+.mw-100 {
   width: 100%;
 }
-.mw-90{
+
+.mw-90 {
   width: 90%;
 }
-.mw-80{
+
+.mw-80 {
   width: 80%;
 }
-.mw-70{
+
+.mw-70 {
   width: 70%;
 }
-.mw-60{
+
+.mw-60 {
   width: 60%;
 }
-.mw-55{
+
+.mw-55 {
   width: 55%;
 }
-.mw-50{
+
+.mw-50 {
   width: 50%;
 }
-.mw-40{
+
+.mw-40 {
   width: 40%;
 }
-.mw-35{
+
+.mw-35 {
   width: 35%;
 }
-.mw-30{
+
+.mw-30 {
   width: 30%;
 }
-.mw-25{
+
+.mw-25 {
   width: 25%;
 }
-.mw-20{
+
+.mw-20 {
   width: 20%;
 }
-.mw-10{
+
+.mw-10 {
   width: 10%;
 }
-
